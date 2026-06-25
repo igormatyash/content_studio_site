@@ -1,0 +1,13 @@
+services:
+  site:
+    build: .
+    restart: unless-stopped
+    expose:
+      - "8080"
+    networks:
+      - content-studio-edge
+
+networks:
+  content-studio-edge:
+    name: content-studio-edge
+    external: true
