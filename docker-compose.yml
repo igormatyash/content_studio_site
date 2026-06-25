@@ -1,5 +1,6 @@
 services:
   site:
+    container_name: content-studio-site
     build: .
     restart: unless-stopped
     expose:
